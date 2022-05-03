@@ -8,5 +8,5 @@ RUN a2enmod rewrite
 
 COPY caisms /var/www/html/
 EXPOSE 80/tcp
-EXPOSE 443/tcp
+
 
