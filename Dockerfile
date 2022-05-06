@@ -8,6 +8,8 @@ RUN a2enmod rewrite
 RUN apt-get install -y vim
 
 COPY ./caisms /var/www/html/
+RUN chown -R www-data:www-data /var/www/html
+
 EXPOSE 80/tcp
 
 
