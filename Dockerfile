@@ -7,8 +7,8 @@ RUN docker-php-ext-install pdo pdo_mysql mysqli
 RUN a2enmod rewrite
 RUN apt-get install -y vim
 RUN useradd -ms /bin/bash admn
-COPY --chown=admn:admn caisms /var/www/html/caisms
-WORKDIR /caisms
+COPY --chown=admn:admn . /var/www/html/caisms
+WORKDIR /var/www/html/caisms
 USER admn
 EXPOSE 80/tcp
 
